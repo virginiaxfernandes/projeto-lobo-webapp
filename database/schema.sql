@@ -4,8 +4,8 @@ COLLATE utf8mb4_unicode_ci;
 
 USE sistema_lobo;
 
-CREATE TABLE quartel (
-    id_quartel INT PRIMARY KEY AUTO_INCREMENT,
+CREATE TABLE cidade (
+    id_cidade INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(50) NOT NULL,
     endereco VARCHAR(100) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
