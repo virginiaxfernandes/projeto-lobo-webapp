@@ -7,31 +7,16 @@ INSERT INTO papel (nome_papel, requer_vinculo_bombeiro) VALUES
 ('Analista', FALSE),
 ('Operador', FALSE);
 
--- 2. QUARTEIS POR REGIÃO - RECIFE
-INSERT INTO quartel (nome, endereco) VALUES 
--- CENTRO
-('1º BBM - Centro', 'Av. Dantas Barreto, 350 - São José, Recife'),
+-- 2. QUARTEIS POR CIDADE - RECIFE
+INSERT INTO cidade (nome, endereco) VALUES 
+-- RMR
 ('Quartel Central - Comando Geral', 'Rua do Imperador, 250 - Santo Antônio, Recife'),
--- ZONA NORTE
-('2º BBM - Zona Norte', 'Av. Norte, 1850 - Fundão, Recife'),
-('3º BBM - Casa Amarela', 'Rua de Casa Amarela, 520 - Casa Amarela, Recife'),
--- ZONA SUL  
-('4º BBM - Zona Sul', 'Av. Caxangá, 2200 - Iputinga, Recife'),
-('5º BBM - Boa Viagem', 'Av. Conselheiro Aguiar, 1500 - Boa Viagem, Recife'),
--- ZONA LESTE
-('6º BBM - Zona Leste', 'Rua do Apolo, 300 - Recife Antigo, Recife'),
-('7º BBM - Olinda', 'Av. Getúlio Vargas, 800 - Carmo, Olinda'),
--- ZONA OESTE
-('8º BBM - Zona Oeste', 'Estrada do Belém, 850 - Beberibe, Recife'),
-('9º BBM - Mustardinha', 'Rua da Mustardinha, 200 - Mustardinha, Recife'),
--- REGIÃO METROPOLITANA
-('10º BBM - Jaboatão', 'Av. Bernardo Vieira de Melo, 1200 - Piedade, Jaboatão'),
-('11º BBM - Paulista', 'Av. Presidente Kennedy, 800 - Maranguape I, Paulista'),
-('12º BBM - Camaragibe', 'Rua Padre Roma, 150 - Centro, Camaragibe'),
--- INTERIOR
-('13º BBM - Caruaru', 'Av. Agamenon Magalhães, 1000 - Centro, Caruaru'),
-('14º BBM - Petrolina', 'Rua da Mangueira, 500 - Centro, Petrolina'),
-('15º BBM - Garanhuns', 'Av. Santo Antônio, 300 - Heliópolis, Garanhuns');
+-- ZONA DA MATA
+('1ª Companhia Independente de Bombeiros Militar','Rua Comendador José Justino, 175 - Boa Vista, Garanhuns'),
+-- SERTÃO
+('4ª Companhia Independente de Bombeiros Militar', 'Avenida Cardoso Pimentel, 2500 - Centro, Petrolina'),
+-- AGRESTE
+('2ª Companhia Independente de Bombeiros Militar', 'Avenida Adjar da Silva Casé, 800 - Indianópolis, Caruaru'),
 
 -- 3. BOMBEIROS
 INSERT INTO bombeiro (nip, patente, nome, id_quartel) VALUES 
